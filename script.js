@@ -12,8 +12,9 @@ console.log(show);
 let fruits = ["apple", "banana", "mango"];
 
 fruits.forEach(fruit => {
-  console.log(fruit);
+  console.log("Fruit: " + fruit);
 });
+
 
 // task-4
 
@@ -27,7 +28,7 @@ let name= users.map((e=>e.name))
 console.log(name);
 
 // task-5
-let above = users.filter((e=> e.age>18))
+let above = users.filter((e=> e.age>=18))
 console.log(above);
 
 // task-6
@@ -37,7 +38,7 @@ const products = [
  { id: 3, name: "Tablet" }
 ]
 
-let id= products.filter((e=>e.id==2))
+let product = products.find(e => e.id === 2);
 console.log(id);
 
 // task-7
